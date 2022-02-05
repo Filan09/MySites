@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,15 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-<body>
-  <table>
+
+<>
+
+  <table class="info">
     <tr>
-      <td>
-        <img src="ds.jpg" alt="Это я :)" width="300">
+      <td class="info ava">
+        <img src="ds.jpg" class="avatar">
       </td>
-      <td>
+      <td class="info txt">
         <h1>Илья Федосенко</h1>
         <p>
           <em>
@@ -28,54 +31,69 @@
       </td>
     </tr>
   </table>
-  <hr>
-  <h2>Мои соц.сети</h2>
-  <br>
-  <a href="https://vk.com/fiian" target="_blank">Мой VK</a>
-  <hr>
-  <h2>Мои хобби</h2>
-  <br>
-  <ol type="I">
-    <li>Путешествия</li>
-    <li>программирование</li>
-    <li>Киберспорт</li>
-    <li>Робототехника</li>
-    <li>3D Моделирование</li>
-  </ol>
-  <hr>
-  <h2><a href="ytb.html">Youtube курсы</a></h2>
-  <hr>
-  <h2>Опыт работы</h2>
-  <br>
-  <table border="1px">
-    <tr>
-      <td>EPAM</td>
-      <td>Software Engineer</td>
-      <td>2016-2017</td>
-    </tr>
-    <tr>
-      <td>SOS</td>
-      <td>Lead</td>
-      <td>2015-2016</td>
-    </tr>
-  </table>
-  <hr>
-  <h2>Связаться со мной</h2>
+
+  <div class="soc">
+    <h2>Мои соц.сети</h2>
+    <div style="text-align: center;"><a href="https://vk.com/fiian" target="_blank" class="vk">VK</a></div>
+    <div style="text-align: center;"><a href="https://www.youtube.com/channel/UComFildZSkWuolokkcwHGOA" target="_blank"
+        class="ytb">Youtube</a></div>
+  </div>
+
+  <div class="hobby">
+    <h2>Мои хобби</h2>
+    <ol type="I">
+      <li>Путешествия</li>
+      <li>Программирование</li>
+      <li>Киберспорт</li>
+      <li>Робототехника</li>
+      <li>3D Моделирование</li>
+    </ol>
+  </div>
+
+
+
+
+  <div class="xp">
+    <h2>Опыт работы</h2>
+    <br>
+    <table border="1px">
+      <thead>
+        <th>Работа</th>
+        <th>Организация</th>
+        <th>Года</th>
+        <th>Зароботок</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Раб</td>
+          <td>Кванториум(Дмитрий Сергеевич)</td>
+          <td>-2640 р. в год(за пропитание на месте работы)</td>
+          <td>2020-2022</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="ytbcourse"><a href="ytb.html">Youtube курсы</a></h2>
+
+  <h2 id="svaz">Связаться со мной</h2>
   <br>
   <form action="/">
     <label for="name">Ваше имя:</label>
     <input type="text" id="name" placeholder="Введите ваше имя">
-    <br>
     <br>
     <label for="email">Ваш Email:</label>
     <input type="email" id="email" placeholder="Введите вашу почту">
     <br>
     <br>
     <label for="txt">Ваше сообщение:</label>
-    <textarea name="txt" id="txt" cols="30" rows="5" placeholder="Ваше сообщение"></textarea>
     <br>
+    <textarea name="txt" id="txt" cols="30" rows="5" placeholder="Ваше сообщение"></textarea>
     <br>
     <input type="submit" id="sub">
   </form>
-</body>
+
+
+  </body>
+
 </html>
